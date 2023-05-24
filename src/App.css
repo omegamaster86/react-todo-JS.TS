@@ -1,11 +1,19 @@
-body * {
-  font-family: "Times New Roman", Times, serif;
+html {
+  background-color: #008080;
   margin: 0;
-  background-color: cadetblue;
 }
 
-.App h1, h3 {
+.App {
+  font-family: "Times New Roman", Times, serif;
+  width: 50%;
+  margin: 40px auto;
+}
+
+.App h1, h2 {
   color: white;
   text-align: center;
 }
 
+.App h1 {
+  font-size: 48px;
+}
