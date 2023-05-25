@@ -1,9 +1,9 @@
 import "./style.css";
 
-const Example = () => {
+const AddTodo = () => {
     return (
         <input type="text" value="NewTodo"/>
     )
 };
 
-export default Example;
+export default AddTodo;
