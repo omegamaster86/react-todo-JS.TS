@@ -1,10 +1,11 @@
-import "./style.css";
+import styles from  "./style.module.css";
 import { useState } from "react";
 
 const AddTodo = () => {
     const [text, setText] = useState("")
     return (
-        <input type="text" 
+        <input className={styles.input}
+        type="text" 
         value={text}
         placeholder={"New Todo"}
         onChange={(e) => setText(e.target.value)}/>
