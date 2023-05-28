@@ -1,5 +1,5 @@
 import './App.css';
-import AddTodo from "../src/component/addTodo/index.jsx";
+import { AddTodo } from "../src/component/addTodo/index.jsx";
 import SearchKeyword from "../src/component/searchkeyword"
 
 const App = () => {
