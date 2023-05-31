@@ -1,15 +1,20 @@
-import styles from  "./style.module.css";
-import { useState } from "react";
+//  import styles from  "./style.module.css";
+import { InputForm } from "../InputForm/index";
+import { INIT_TODO_LIST, INIT_UNIQUE_ID } from "../../data";
 
-const AddTodo = () => {
-    const [text, setText] = useState("")
+
+export const AddTodo = (props) => {
+
+    const { addInputValue } =props
     return (
-        <input className={styles.input}
-        type="text" 
-        value={text}
-        placeholder={"New Todo"}
-        onChange={(e) => setText(e.target.value)}/>
+        <>
+            <InputForm
+            placeholder={"New Todo"}
+            inputValue={addInputValue}
+            // addInputValue={addInputValue}
+            d
+            />
+        </>
     )
 };
 
-export default AddTodo;
