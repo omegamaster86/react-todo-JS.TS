@@ -3,14 +3,16 @@ import { InputForm } from "../InputForm/index";
 
 export const AddTodo = (props) => {
 
-    const { addInputValue } =props
+    const { addInputValue, addTodo, onChangeTodo } =props
     return (
         <>
             <InputForm
             placeholder={"New Todo"}
             inputValue={addInputValue}
-            // addInputValue={addInputValue}
-            
+            // エンター押下処理
+            KeyDown={addTodo}
+
+            // handleChangeValue={onChangeTodo}
             />
         </>
     )
