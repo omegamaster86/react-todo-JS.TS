@@ -11,8 +11,7 @@ export const AddTodo = (props) => {
             placeholder={"New Todo"}
             inputValue={addInputValue}
             // エンター押下処理
-            KeyDown={addTodo}
-
+            enteredTodo={addTodo}
             // handleChangeValue={onChangeTodo}
             />
         </>
