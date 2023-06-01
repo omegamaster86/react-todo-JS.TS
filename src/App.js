@@ -1,5 +1,5 @@
 import './App.css';
-import { TodoTemplate } from './component/todoTemplate';
+import { TodoTemplate } from './component/TodoTemplate/index';
 
 
 const App = () => {
