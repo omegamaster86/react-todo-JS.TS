@@ -12,7 +12,7 @@ export const AddTodo = (props) => {
             inputValue={addInputValue}
             // エンター押下処理
             enteredTodo={addTodo}
-            // handleChangeValue={onChangeTodo}
+            changeValue={onChangeTodo}
             />
         </>
     )
