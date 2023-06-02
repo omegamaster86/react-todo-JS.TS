@@ -3,7 +3,7 @@ import { InputForm } from "../InputForm/index";
 
 export const AddTodo = (props) => {
 
-    const { addInputValue, addTodo, onChangeTodo } =props
+    const { addInputValue, addTodo, onChangeTodo } = props;
     return (
         <>
             <h2 className={styles.subTitle}>ADD TODO</h2>
@@ -15,6 +15,6 @@ export const AddTodo = (props) => {
             changeValue={onChangeTodo}
             />
         </>
-    )
+    );
 };
 
