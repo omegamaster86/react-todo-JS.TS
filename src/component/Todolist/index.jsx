@@ -2,12 +2,14 @@ import styles from  "./style.module.css";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const Todolist = (props) => {
+export const TodoList = (props) => {
     const { todoList, deleteTodo } = props;
 
     return (
-        <ul>
-            <li>
+        <ul className={styles.list}>
+            {todoList.map((todo) =>(
+            <li key={todo.id} className={styles.todo}>
+                <span className={styles.task}>{todo.title}</span>
                 <div className={styles.far}>
                     <FontAwesomeIcon
                     icon={faTrashAlt}
@@ -16,6 +18,7 @@ export const Todolist = (props) => {
                     />
                 </div>
             </li>
+            ))}
         </ul>
     );
-}
+};
