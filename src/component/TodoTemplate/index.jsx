@@ -5,8 +5,6 @@ import { TodoList } from "../Todolist/index"
 import { INIT_TODO_LIST, INIT_UNIQUE_ID } from "../../data";
 import styles from "./style.module.css";
 
-
-
 export const TodoTemplate = () => {
   /* todo list */
   const [originTodoList, setOriginTodoList] = useState(INIT_TODO_LIST);
