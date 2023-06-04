@@ -56,11 +56,14 @@ export const useHooks = () => {
   };
   // 検索キーワード更新処理
   const changeSearchKeyword = (e) => setSearchKeyword(e.target.value);
-
-
-  const states = { showTodoList, searchKeyword, addInputValue };
-
-  const actions = { onChangeAddInputValue, addTodo, deleteTodo, changeSearchKeyword };
   
-  return [states, actions];
+  return {
+    showTodoList,
+    searchKeyword,
+    addInputValue,
+    onChangeAddInputValue,
+    addTodo,
+    deleteTodo,
+    changeSearchKeyword,
+  };
 };
