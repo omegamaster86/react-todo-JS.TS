@@ -2,14 +2,19 @@ import { InputForm } from "../InputForm/index";
 import { AddTodo } from "../addTodo/index";
 import { TodoList } from "../Todolist/index"
 import styles from "./style.module.css";
-import { useHooks } from "../../hooks/useHooks";
+import { useTodoContext } from "../../context/TodoContext"
 
 
 export const TodoTemplate = () => {
-  const [
-  { showTodoList, searchKeyword, addInputValue },
-  { onChangeAddInputValue, addTodo, deleteTodo, changeSearchKeyword },
-  ] = useHooks();
+  const {
+    showTodoList,
+    searchKeyword,
+    addInputValue, 
+    onChangeAddInputValue,
+    addTodo,
+    deleteTodo,
+    changeSearchKeyword,
+} = useTodoContext();
 
   return (
     <div className={styles.container}>
