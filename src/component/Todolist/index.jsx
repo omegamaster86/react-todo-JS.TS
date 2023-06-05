@@ -5,7 +5,7 @@
  import { NAVIGATION_PATH } from "../../../src/navigations";
  import styles from "./style.module.css";
  
- export const TodoList = ({ todoList, handleDeleteTodo }) => {
+ export const TodoList = ({ todoList, deleteTodo }) => {
    const navigate = useNavigate();
  
    /**
@@ -52,7 +52,7 @@
                <FontAwesomeIcon
                  icon={faTrashAlt}
                  size="lg"
-                 onClick={() => handleDeleteTodo(todo.id, todo.title)}
+                 onClick={() => deleteTodo(todo.id, todo.title)}
                />
              </div>
            </div>
