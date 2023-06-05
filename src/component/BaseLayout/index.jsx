@@ -1,4 +1,4 @@
- import { Navigation } from "../../molecules/Navigation/index.jsx";
+ import { Navigation } from "../molecules/Navigation/index";
  import styles from "./styles.module.css";
  
  export const BaseLayout = ({ children, title }) => (
