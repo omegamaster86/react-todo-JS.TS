@@ -1,6 +1,6 @@
- import { BaseLayout } from "../../organisms/BaseLayout";
+ import { BaseLayout } from "../../BaseLayout/index";
  import { InputForm } from "../../atoms/InputForm/index";
- import { TodoList } from "../../organisms/TodoList";
+ import { TodoList } from "../../Todolist/index";
  import { useTodoContext } from "../../../context/TodoContext";
  import { useTodoTemplate } from "./useTodoTemplate";
  import styles from "./styles.module.css";
