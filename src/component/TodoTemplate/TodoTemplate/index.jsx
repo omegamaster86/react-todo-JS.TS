@@ -1,5 +1,5 @@
  import { BaseLayout } from "../../organisms/BaseLayout";
- import { InputForm } from "../../InputForm/index";
+ import { InputForm } from "../../atoms/InputForm/index";
  import { TodoList } from "../../organisms/TodoList";
  import { useTodoContext } from "../../../context/TodoContext";
  import { useTodoTemplate } from "./useTodoTemplate";

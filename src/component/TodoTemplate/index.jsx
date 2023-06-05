@@ -1,4 +1,4 @@
-import { InputForm } from "../InputForm/index";
+import { InputForm } from "../atoms/InputForm/index";
 import { AddTodo } from "../addTodo/index";
 import { TodoList } from "../Todolist/index"
 import styles from "./style.module.css";
