@@ -3,7 +3,7 @@
  import { BaseLayout } from "../../BaseLayout/index";
  import { InputForm } from "../../atoms/InputForm/index";
  import { TextArea } from "../../atoms/TextArea/index";
- import styles from "./styles.module.css";
+ import styles from "./style.module.css";
 
  export const TodoDetailTemplate = () => {
    const { originTodoList } = useTodoContext();
