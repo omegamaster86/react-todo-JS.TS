@@ -4,7 +4,7 @@
  import { InputForm } from "../../atoms/InputForm/index";
  import { TextArea } from "../../atoms/TextArea/index";
  import { CommonButton } from "../../atoms/CommonButton/index.jsx";
- import styles from "./styles.module.css";
+ import styles from "./style.module.css";
 
  export const TodoEditTemplate = () => {
    const { originTodoList, updateTodo } = useTodoContext();
