@@ -4,7 +4,7 @@
  import { TextArea } from "../../atoms/TextArea";
  import { CommonButton } from "../../atoms/CommonButton";
  import { useTodoCreateTemplate } from "./useTopCreateTemplate.js";
- import styles from "./styles.module.css";
+ import styles from "./style.module.css";
  
 
  export const TodoCreateTemplate = () => {
