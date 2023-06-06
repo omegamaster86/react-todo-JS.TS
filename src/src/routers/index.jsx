@@ -1,11 +1,19 @@
+/**
+ * index
+ *
+ * @package routers
+ */
 import { createBrowserRouter } from "react-router-dom";
-import { NAVIGATION_LIST } from "../navigations";
-import { TodoPage } from "../pages/todo.jsx";
+import { NAVIGATION_LIST } from "../constants/navigations";
+import { TodoPage } from "../pages/todo";
 import { TodoDetailPage } from "../pages/detail.jsx";
 import { TodoCreatePage } from "../pages/create";
 import { TodoEditPage } from "../pages/edit";
 import React from "react";
 
+/**
+ * index
+ */
 export const router = createBrowserRouter([
   {
     path: NAVIGATION_LIST.TOP,

@@ -1,34 +1,30 @@
-import { useContext, createContext } from "react";
-import { useHooks} from "../hooks/useHooks";
+ import { useContext, createContext } from "react";
+ import { useHooks } from "../hooks/useHooks";
 
-const TodoContext = createContext({});
+ const TodoContext = createContext({});
+ 
+ export const TodoProvider = ({ children }) => {
+   // カスタムフックから状態とロジックを呼び出してコンテキストプロバイダーにあてがう
+   const { originTodoList, addTodo, updateTodo, deleteTodo } = useHooks();
+ 
+    /**
+     * TodoProvider
+     * @param children
+     * @constructor
+     */
 
-export const useTodoContext = () => useContext(TodoContext);
+   return (
+     <TodoContext.Provider
+       value={{
+         originTodoList,
+         addTodo,
+         updateTodo,
+         deleteTodo,
+       }}
+     >
+       {children}
+     </TodoContext.Provider>
+   );
+ };
 
-export const TodoProvider = ({children}) => {
-    const {
-        showTodoList,
-        searchKeyword,
-        addInputValue, 
-        onChangeAddInputValue,
-        addTodo,
-        deleteTodo,
-        changeSearchKeyword,
-    } = useHooks();
-
-    return (
-        <TodoContext.Provider
-        value={{
-            showTodoList,
-            searchKeyword,
-            addInputValue, 
-            onChangeAddInputValue,
-            addTodo,
-            deleteTodo,
-            changeSearchKeyword,
-        }}
-        >
-          {children}
-        </TodoContext.Provider>
-    )
-}
+ export const useTodoContext = () => useContext(TodoContext);
