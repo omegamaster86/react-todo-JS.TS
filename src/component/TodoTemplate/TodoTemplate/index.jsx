@@ -3,7 +3,7 @@
  import { TodoList } from "../../Todolist/index";
  import { useTodoContext } from "../../../context/TodoContext";
  import { useTodoTemplate } from "./useTodoTemplate";
- import styles from "./styles.module.css";
+ import styles from "./style.module.css";
  
  export const TodoTemplate = () => {
    // コンテキストから状態とロジックを呼び出してコンポーネントにあてがう
