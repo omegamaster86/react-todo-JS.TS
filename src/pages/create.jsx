@@ -1,3 +1,3 @@
- import { TodoCreateTemplate } from "../components/templates/TodoCreateTemplate/index.jsx";
+ import { TodoCreateTemplate } from "../component/TodoTemplate/TodoCreateTemplate/index.jsx";
 
  export const TodoCreatePage = () => <TodoCreateTemplate />;
